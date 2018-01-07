@@ -1,0 +1,102 @@
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+a {
+  color: white;
+  font-size: 20px;
+  font-style:normal;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  display: inline-block;
+}
+.col-7 {width: 58.33%;}
+.col-1 {
+  background:#ffff00;
+  width:8.33%;
+}
+
+.col-2 {
+  background: #afff00;
+  width: 16.66%;
+}
+
+.col-3 {
+  background:#1ee2a6;
+  width: 25%;
+}
+
+.col-4 {
+  background:  #01b6ad;
+  height: auto;
+  width:33.3%;
+}
+
+.col-6 {
+  background: #9c42d1;
+  height: auto;
+  width: 50%;
+}
+
+.col-8 {
+  background: #9c42d1;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  width: 66.66%;
+}
+
+.txt {
+  color: white;
+  text-align: center;
+}
+
+.col-12 {
+  background: #d126a9;
+  height: auto;
+  width: 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+  /* height: 100vh; */
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.row-::before {
+  content: '';
+  display: table;/*es como display: block */
+}
+
+.row-:after {
+  clear: both;//limpiar
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 7px;
+  /* padding: 12px; */
+  /* width: 100%; */
+  border: 1px solid red;
+}
